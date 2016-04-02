@@ -1,0 +1,174 @@
+
+// Video and Hero ========================================================================
+
+.bg {
+  background: url('../img/agnostic-mobile-hero.jpeg') no-repeat center center;
+  width: 100%;
+  height: 425px; /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -1;
+  @media(max-width: $screen-xs){
+    background-size: auto 100%; 
+  }
+  @media(max-width: $screen-sm) and (min-width: $screen-xs){
+    background-size: 110%; 
+  }
+  @media(max-width: $screen-md) and (min-width: $screen-sm){
+    height: 425px;
+    background-size: 100% auto;
+  }
+  @media(min-width: $screen-xl){
+    height: 550px; 
+  }
+}
+
+.campus-bg{
+  width: auto;
+  background-size: 100% auto;
+  height: 425px; /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -1;
+
+  .dark-overlay{
+    background-color: rgba(0,0,0,0.3); /*dim the background*/
+  }
+  @media(min-width: $screen-lg) and (max-width: 1600px){
+    background-size: 150%; 
+  }
+  @media(max-width: $screen-lg){
+    background-size: auto 100%; 
+  }
+  @media(max-width: $screen-md){
+    background-size: auto 100%; 
+  }
+  @media(max-width: $screen-sm){
+    background-size: auto 100%; 
+    height: 425px;
+  }
+  @media(min-width: $screen-xl){
+    height: 550px; 
+  }
+}
+
+.auto-height{
+  height: auto !important;
+}
+
+.video-wrap {
+  display: block; 
+}
+
+.video-unit {
+  height: 425px;
+  border: 0;
+  @include box-shadow(0 2px 5px rgba(0,0,0,.3));
+  border-right: none;
+  border-left: none;
+  position: relative;
+  overflow: hidden;
+  // padding: 20px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  @media(max-width: $screen-sm){
+    height: 425px;
+  }
+  @media(min-width: $screen-xl){
+    height: 550px;
+  }
+}
+
+.dark-overlay {
+  background-color: rgba(0,0,0,0.33); /*dim the background*/
+  position: absolute;
+  z-index: 3;
+  height: 425px; 
+  width: 100%; 
+  top: 0px; 
+  @media(max-width: $screen-sm){
+    height: 425px;
+  }
+  @media(min-width: $screen-xl){
+    height: 550px;
+  }
+}
+
+.main-video {
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  overflow: hidden;
+  @media(min-width: $large-screen){
+    margin-top: -200px;  
+  }
+  @media(min-width: 1600px){
+    margin-top: -200px; 
+  }
+  @media(min-width: 1800px){
+    margin-top: -320px; 
+  }
+  @media(max-width: $screen-sm){
+    height: 500px;
+  }
+}
+
+.video-text-overlay {
+  margin: 0 auto !important;
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  color: #fff;
+  position: absolute;
+  top: 100px;
+  left: 25%;
+  z-index: 4;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1em;
+
+  h1, 
+  h2, 
+  h3,
+  p, {
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);  
+
+    .btn {
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); 
+    }
+  }
+
+  .btn{
+    font-size: 26px; 
+  }
+
+  @media(max-width: $large-screen){
+    top: 20px; 
+  }
+  @media(max-width: $medium-screen){
+    width: 90%; 
+    left: 5%; 
+  }
+  @media(max-width: $screen-sm){
+    h1{
+      font-size: 38px; 
+    }
+    h2{
+      font-size: 32px; 
+    }
+    h3{
+      font-size: 26px;
+    }
+  }
+  @media(min-width: 1100px){
+    top: 80px;
+    left: 10%;
+    width: 80%;
+  }
+  @media(min-width: $screen-xl){
+    top: 160px;
+  }
+}
+    
