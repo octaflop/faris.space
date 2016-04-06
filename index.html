@@ -2,16 +2,21 @@
 layout: landing
 ---
         <!-- Banner -->
-          <section id="banner">
-            <div class="inner">
-              <h2>{{ site.title }}</h2>
-              <p>{{ site.description | markdownify }}</p>
-              <!-- <ul class="actions">
-                <li><a href="#" class="button special">Activate</a></li>
-              </ul> -->
-            </div>
-            <a href="#one" class="more scrolly">&nbsp;</a>
-          </section>
+        <section id="banner">
+          <div class="inner">
+            <video class="main-video hidden-sm hidden-xs" autoplay loop>
+              <source src="/static/videos/sunset_final_20fps.webm" type="video/webm; codecs=vp8, vorbis" />
+              <source src="/static/videos/sunset_final_20fps.mp4" type="video/mp4" />
+              <source src="/static/videos/sunset_final_20fps.ogg" type="video/ogg; codecs=vp8, vorbis" />
+            </video>
+            <h2>{{ site.title }}</h2>
+            <p>{{ site.description | markdownify }}</p>
+            <!-- <ul class="actions">
+              <li><a href="#" class="button special">Activate</a></li>
+            </ul> -->
+          </div>
+          <a href="#one" class="more scrolly">&nbsp;</a>
+        </section>
 
         <!-- One -->
           <section id="one" class="wrapper style1 special">
